@@ -28,6 +28,6 @@ The script generates two visualizations:
 
 #### Example Plot
 <p align="center">
-  <img src="images/static_torque_plot.png" width="500">
+  <img src="Images/static_torque_plot.png" width="500">
 </p>
 Useful for actuator selection, arm design, and mechanical analysis.
