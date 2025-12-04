@@ -9,6 +9,7 @@
 %
 %   Outputs:
 %       static_torque_results.csv
+%       static_torque_plot.png
 
 g = 9.81; % Acceleration due to Gravity (m/s^2)
 masses = [3, 7, 10]; % Masses (m) in kg
