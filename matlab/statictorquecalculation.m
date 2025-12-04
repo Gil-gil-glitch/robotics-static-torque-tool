@@ -22,8 +22,10 @@ LeverLength = zeros(num_rows, 1);
 StaticTorque = zeros(num_rows, 1);
 idx = 1;
 
-% Create output directory for images if it doesn't exist
-outputFolder = 'images';
+
+scriptFolder = fileparts(mfilename('fullpath'));
+projectFolder = fileparts(scriptFolder);
+outputFolder = fullfile(projectFolder, 'Images');
 if ~exist(outputFolder, 'dir')
     mkdir(outputFolder);
 end
@@ -56,9 +58,9 @@ disp('Calculated Static Torque Results');
 disp(TorqueTable);
 
 
-writetable(TorqueTable, 'static_torque_results.csv');
+writetable(TorqueTable, 'm-static_torque_results.csv');
 disp(' ');
-disp('Results also saved to static_torque_results.csv');
+disp('Results also saved to m-static_torque_results.csv');
 
 %% Plot: Torque vs Lever Length for Each Mass
 figure;
@@ -79,7 +81,7 @@ legend('Location', 'northwest');
 hold off;
 
 %% Saves the plot as an image .png file
-outputName_png = fullfile(outputFolder, 'static_torque_plot.png');
+outputName_png = fullfile(outputFolder, 'm-static_torque_plot.png');
 
 exportgraphics(gcf, outputName_png, 'Resolution', 300);   % High-quality PNG
 
