@@ -6,7 +6,6 @@
 %   Includes:
 %       - Automatic table generation
 %       - Engineering plots
-%       - Interactive UI with sliders
 %
 %   Outputs:
 %       static_torque_results.csv
