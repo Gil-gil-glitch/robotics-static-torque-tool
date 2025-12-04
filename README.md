@@ -26,8 +26,11 @@ The script generates two visualizations:
 - **Torque vs. Lever Length** for different masses  
 - **Torque vs. Mass** for different lever lengths  
 
-#### Example Plot
+#### Example Plots
 <p align="center">
-  <img src="Images/static_torque_plot.png" width="500">
+  <img src="Images/m-static_torque_plot.png" width="500">
+</p>
+<p align="center">
+  <img src="Images/py-static_torque_plot.png" width="500">
 </p>
 Useful for actuator selection, arm design, and mechanical analysis.
